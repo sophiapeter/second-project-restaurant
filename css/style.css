@@ -1,0 +1,235 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;600;700&display=swap');
+
+  body {
+    font-family: "spline sans", sans-serif;
+    color: #777;
+    line-height: 1.7;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: #222;
+  }
+  a {
+    text-decoration: none;
+    color: #222;
+    transition: all 0.4s;
+    font-weight: 600;
+  }
+  a:hover{
+    color: #f58d17;
+  }
+  img {
+    width: 100%;
+  }
+  section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .shadow-on-hover {
+    transition:  all 0.3s ;
+  }
+  .shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  }
+
+  .btn {
+    border-radius: 0;
+    padding: 14px 38px;
+  }
+  .btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: #f58d17;
+    background-color: #f58d17;
+  }
+  .btn-brand:hover{
+    border-color: #ec8714;
+    background-color: #ec8714;
+    color: #fff;
+  }
+
+  .slide-1 {
+    background: linear-gradient(#00000050, #00000050), url(../images/eclairs-with-salmon-fresh-vegetables-herbs-gourmet-snacks_165293-2784.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slide-2 {
+    background: linear-gradient(#00000050, #00000050), url(../images/wonderful-wedding-table-amazing-restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .carousel-control-prev,
+  .carousel-control-next{
+    background-color: rgba(0,0,0,0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+  }
+  #heroslider h6::after,
+  #heroslider h6::before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+  }
+  #about .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #f58d17;
+  }
+
+  .intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto ;
+  }
+  #menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  }
+  #menu .nav-pills .nav-link.active {
+    background-color: #f58d17;
+    color: #fff;
+  }
+
+  .menu-item .stars {
+    color: #f58d17;
+  }
+  #features {
+    background: linear-gradient(#00000050, #00000050), url(../images/eclairs-with-salmon-fresh-vegetables-herbs-gourmet-snacks_165293-2784.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .feature {
+    border: 2px solid #ffffff33;
+  }
+  .feature .feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f58d17;
+    font-size: 28px;
+    color: #fff;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+  }
+
+  .team-member img {
+    max-width: 140px;
+    box-shadow: -10px -10px 0 #f58d17 ;
+    border-radius: 100px;
+  }
+ 
+  #review {
+    background: linear-gradient(#00000050, #00000050), url(../images/top-view-pepperoni-pizza-sliced-into-six-slices.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .review img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+  }
+  .review .quote-icon {
+    font-size: 74px;
+    color: #f58d17;
+    line-height: 1;
+  }
+  .review .stars {
+    color: #f58d17;
+  }
+
+  #reservation .form-control { 
+    border-radius: 0;
+  }
+  #reservation .form-control:focus {
+    box-shadow: none;
+    border: #f58d17;
+  }
+  .insta-post {
+    position: relative;
+    overflow: hidden;
+  }
+  .insta-post .insta-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .insta-post img {
+    transition: all 0.4s;
+  }
+  .insta-post:hover img {
+    transform: scale(1.2);
+  }
+  .insta-post:hover .insta-btn {
+    opacity: 1;
+  }
+  .blog-post img {
+    width: 40%;
+    object-fit: contain;
+  }
+
+@media (max-width: 768px) {
+  .blog-post {
+    flex-direction: column;
+  }
+  .blog-post img {
+    width: 100%;
+  }
+}
+
+footer {
+  background: linear-gradient(#00000050, #00000050), url(../images/eclairs-with-salmon-fresh-vegetables-herbs-gourmet-snacks_165293-2784.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+footer p {
+  color: #fff;
+
+}
+.footer-top{
+  margin-bottom: 30px;
+}
+footer .social-links a {
+  font-weight: normal;
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer .logo {
+font-size: 32px;
+font-weight: bold;
+}
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+  
